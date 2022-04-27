@@ -7,10 +7,10 @@ import androidx.lifecycle.ViewModel
 class MainViewModel : ViewModel() {
     private val factsLiveDataObject = MutableLiveData<String>("This is a fact")
 
-    val factsLiveData: LiveData<String>
+    val quoteLiveData: LiveData<String>
         get() = factsLiveDataObject
 
-    fun updateLiveData() {
+    fun updateQuote() {
         factsLiveDataObject.value = "Another facts"
     }
 }
